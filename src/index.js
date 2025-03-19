@@ -47,6 +47,7 @@ console.log(otherDogs); // [ 'Snoopy', 'Sparky' ]
 console.log('----------------------------');
 
 // Using array destructuring to swap values
+
 let x = 'first';
 let y = 'second';
 [x, y] = [y, x];
