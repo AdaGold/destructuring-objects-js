@@ -80,6 +80,6 @@ let y = 'second';
 
 [x, y] = [y, x];
 
-console.log(x);
-console.log(y);
+console.log(x); // second
+console.log(y); // first
 console.log('----------------------------');
