@@ -1,0 +1,30 @@
+{
+  "name": "destructuring-objects-js",
+  "version": "1.0.0",
+  "description": "Example code that shows off destructuring syntax for objects in JavaScript",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "npx eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdaGold/destructuring-objects-js.git"
+  },
+  "author": "Ada Developers Academy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdaGold/destructuring-objects-js/issues"
+  },
+  "homepage": "https://github.com/AdaGold/destructuring-objects-js#readme",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.22.0",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "globals": "^16.0.0"
+  }
+}
