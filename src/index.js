@@ -23,22 +23,24 @@ const isUserAuthorized = function( { id, userName, authorized }) {
   }
 };
 
-isUserAuthorized({
-  id: 2,
-  userName: 'Kamala',
-  authorized: true,
-});
+// Makes use of the `user` variable defined above
+isUserAuthorized(user); // Siobhan Thacker is authorized.
 
-isUserAuthorized({
-  id: 1,
-  userName: 'Mike',
+const unAuthorizedUser = {
+  id: 2,
+  userName: 'Chantay Jarrell',
   authorized: false,
-});
+  group: 'guest',
+};
+
+isUserAuthorized(unAuthorizedUser); // Chantay Jarrell is not authorized.
+
 console.log('----------------------------');
 
 // Destructuring an array into named variables
 
 const dogs = ['Fido', 'Buddy', 'Snoopy', 'Sparky'];
+
 const [firstDog, secondDog, ...otherDogs] = dogs;
 
 console.log(firstDog); // Fido
@@ -46,34 +48,38 @@ console.log(secondDog); // Buddy
 console.log(otherDogs); // [ 'Snoopy', 'Sparky' ]
 console.log('----------------------------');
 
-// Using array destructuring to swap values
-
-let x = 'first';
-let y = 'second';
-[x, y] = [y, x];
-
-console.log(x);
-console.log(y);
-console.log('----------------------------');
-
 // Using array destructuring to get the first element of an array.
 
-// Comment out lines 41-46 above that initialize and use the same
+// Comment out all lines in the file that initialize and use the same
 // named variables before uncommenting and running the block below
 
 // const dogs = ['Fido', 'Buddy', 'Snoopy', 'Sparky'];
+
 // const [firstDog] = dogs;
+
 // console.log(firstDog); // Fido
 console.log('----------------------------');
 
 // Using array destructuring to get all elements
 // *except* the first element of an array.
 
-// Comment out lines 41-46 and 63-65 above that initialize and use
-// the same named variables before uncommenting and running the
-// block below
+// Comment out all lines in the file that initialize and use the same
+// named variables before uncommenting and running the block below
 
 // const dogs = ['Fido', 'Buddy', 'Snoopy', 'Sparky'];
+
 // const [, ...otherDogs] = dogs;
+
 // console.log(otherDogs); // ['Buddy', 'Snoopy', 'Sparky']
+console.log('----------------------------');
+
+// Using array destructuring to swap values
+
+let x = 'first';
+let y = 'second';
+
+[x, y] = [y, x];
+
+console.log(x);
+console.log(y);
 console.log('----------------------------');
