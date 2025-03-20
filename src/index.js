@@ -1,25 +1,25 @@
 // Destructuring an object into named variables
 const user = {
   id: 1,
-  userName: 'Siobhan Thacker',
+  fullName: 'Siobhan Thacker',
   authorized: true,
   group: 'admin',
 };
 
-const { id, userName, authorized } = user;
+const { id, fullName, authorized } = user;
 
 console.log(id); // 1
-console.log(userName); // Siobhan Thacker
+console.log(fullName); // Siobhan Thacker
 console.log(authorized); // true
 console.log('----------------------------');
 
 // Destructuring an object passed as an argument into a function
 
-const isUserAuthorized = function( { id, userName, authorized }) {
+const isUserAuthorized = function( { id, fullName, authorized }) {
   if (authorized) {
-    console.log(`${id}: ${userName} is authorized`);
+    console.log(`${id}: ${fullName} is authorized`);
   } else {
-    console.log(`${id}: ${userName} is not authorized`);
+    console.log(`${id}: ${fullName} is not authorized`);
   }
 };
 
@@ -28,7 +28,7 @@ isUserAuthorized(user); // Siobhan Thacker is authorized.
 
 const unAuthorizedUser = {
   id: 2,
-  userName: 'Chantay Jarrell',
+  fullName: 'Chantay Jarrell',
   authorized: false,
   group: 'guest',
 };
